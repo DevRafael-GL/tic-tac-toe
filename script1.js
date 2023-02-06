@@ -55,7 +55,7 @@ function score() {
 }
 
 function checkATie() {
-  if (!cells.find((cell) => !cell.textContent)) {
+  if (!cells.find((cell) => !cell.textContent) && !winner) {
     setTimeout(() => {
       alert("Houve um empate!");
       reset();

@@ -17,8 +17,8 @@ function handleClick(event) {
 
     if (!cells[index].textContent && !winner) {
       cells[index].textContent = turn;
-
       checkWinner();
+      checkATie();
       switchTurn();
     }
   }
@@ -51,6 +51,15 @@ function resetScore() {
 function score() {
   tableX.textContent = scoreX;
   tableO.textContent = scoreO;
+}
+
+function checkATie() {
+  if (!cells.find((cell) => !cell.textContent)) {
+    setTimeout(() => {
+      alert("Houve um empate!");
+      reset();
+    }, 100);
+  }
 }
 
 function checkWinner() {

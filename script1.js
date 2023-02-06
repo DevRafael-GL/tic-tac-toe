@@ -31,6 +31,7 @@ function switchTurn() {
 
 function reset() {
   turn = "X";
+  player.textContent = turn;
   winner = null;
   cells.map((cell) => (cell.textContent = ""));
 }

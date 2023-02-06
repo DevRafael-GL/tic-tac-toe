@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jogo da velha</title>
+</head>
+
+<body>
+
+  <div id="main">
+    <div id="top">
+      <h2>Jogador da vez: <span id="player">X</span></h2>
+      <table class="score" border="1">
+        <tr>
+          <th>X</th>
+          <th>O</th>
+        </tr>
+        <tr>
+          <td id="tableX">0</td>
+          <td id="tableO">0</td>
+        </tr>
+        <tr>
+
+      </table>
+    </div>
+    <table id="board">
+      <tr>
+        <td id="cells-0"></td>
+        <td id="cells-1"></td>
+        <td id="cells-2"></td>
+      </tr>
+      <tr>
+        <td id="cells-3"></td>
+        <td id="cells-4"></td>
+        <td id="cells-5"></td>
+      </tr>
+      <tr>
+        <td id="cells-6"></td>
+        <td id="cells-7"></td>
+        <td id="cells-8"></td>
+      </tr>
+    </table>
+    <button onclick="resetScore()">Reiniciar</button>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+
+</html>
